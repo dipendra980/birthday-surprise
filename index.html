@@ -1,43 +1,512 @@
-<!-- SCENE 5 -->
-<section class="scene" id="scene5">
-    <div class="memory-card">
-        <h1>Our Little Memories 💕</h1>
-        <p>Little moments that make our friendship special ✨</p>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="photo-grid">
+<head>
+    <meta charset="UTF-8">
 
-            <div class="memory">
-                <div class="memory-art">😂</div>
-                <span>All those crazy laughs</span>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Aarti Singh 💕</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts"></div>
+
+
+    <main>
+
+
+        <!-- =========================
+             SCENE 1 - ENVELOPE
+        ========================== -->
+
+        <section class="scene active" id="scene1">
+
+            <div class="card envelope-card">
+
+                <div class="envelope">
+                    💌
+                </div>
+
+                <h1>
+                    You've Got a Surprise! 💕
+                </h1>
+
+                <p>
+                    A little birthday surprise
+                    is waiting for you...
+                </p>
+
+                <button onclick="nextScene()">
+                    Tap to Open 💗
+                </button>
+
             </div>
 
-            <div class="memory">
-                <div class="memory-art">🥰</div>
-                <span>Beautiful moments</span>
+        </section>
+
+
+
+        <!-- =========================
+             SCENE 2 - GREETING
+        ========================== -->
+
+        <section class="scene" id="scene2">
+
+            <div class="card">
+
+                <div class="cartoon">
+                    🧸🎀
+                </div>
+
+                <h1>
+                    To My Favorite Person 💕
+                </h1>
+
+                <p>
+                    Happy Birthday,
+                    <strong>Aarti Singh</strong>! 🎂
+
+                    <br><br>
+
+                    Today is all about celebrating
+                    the amazing person you are. 💗
+                </p>
+
+                <button onclick="nextScene()">
+                    Continue 💖
+                </button>
+
             </div>
 
-            <div class="memory">
-                <div class="memory-art">🎉</div>
-                <span>The fun times</span>
+        </section>
+
+
+
+        <!-- =========================
+             SCENE 3 - CAKE & WISH
+        ========================== -->
+
+        <section class="scene" id="scene3">
+
+            <div class="card cake-card">
+
+                <h1>
+                    Make a Birthday Wish 🎂
+                </h1>
+
+                <p>
+                    Tap all three flames
+                    to make your wish!
+                </p>
+
+
+                <div class="cake">
+
+                    <div class="candles">
+
+
+                        <!-- Candle 1 -->
+
+                        <div class="candle">
+
+                            <div class="flame"
+                                 onclick="blowCandle(this)">
+                            </div>
+
+                            <div class="stick">
+                            </div>
+
+                        </div>
+
+
+                        <!-- Candle 2 -->
+
+                        <div class="candle">
+
+                            <div class="flame"
+                                 onclick="blowCandle(this)">
+                            </div>
+
+                            <div class="stick">
+                            </div>
+
+                        </div>
+
+
+                        <!-- Candle 3 -->
+
+                        <div class="candle">
+
+                            <div class="flame"
+                                 onclick="blowCandle(this)">
+                            </div>
+
+                            <div class="stick">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="cake-top">
+                        🎂
+                    </div>
+
+                    <div class="cake-body">
+                    </div>
+
+                </div>
+
+
+                <p id="candleText">
+                    Tap all 3 flames to make
+                    your wish! ✨
+                </p>
+
+
+                <button id="wishButton"
+                        onclick="nextScene()"
+                        disabled>
+
+                    Wish made! Next 💕
+                </button>
+
             </div>
 
-            <div class="memory">
-                <div class="memory-art">🧸</div>
-                <span>Our silly conversations</span>
+        </section>
+
+
+
+        <!-- =========================
+             SCENE 4 - SPECIAL MESSAGE
+        ========================== -->
+
+        <section class="scene" id="scene4">
+
+            <div class="card">
+
+                <div class="cartoon big">
+                    🐻💗
+                </div>
+
+
+                <h1>
+                    Aarti, You're Truly Special 💕
+                </h1>
+
+
+                <p>
+
+                    Some people come into our lives
+                    and make ordinary moments feel
+                    extraordinary.
+
+                    <br><br>
+
+                    I'm really lucky to have a friend
+                    like you.
+
+                    <br><br>
+
+                    May your birthday be filled with
+                    laughter, happiness, love and
+                    unforgettable moments. 🌸
+
+                </p>
+
+
+                <button onclick="nextScene()">
+                    View Our Memories 📸
+                </button>
+
             </div>
 
-            <div class="memory">
-                <div class="memory-art">💗</div>
-                <span>Special memories</span>
+        </section>
+
+
+
+        <!-- =========================
+             SCENE 5 - MEMORIES
+        ========================== -->
+
+        <section class="scene" id="scene5">
+
+            <div class="memory-card">
+
+                <h1>
+                    Our Little Memories 💕
+                </h1>
+
+
+                <p>
+                    Little moments that make
+                    our friendship special ✨
+                </p>
+
+
+                <div class="photo-grid">
+
+
+                    <!-- Memory 1 -->
+
+                    <div class="memory">
+
+                        <div class="memory-art">
+                            😂
+                        </div>
+
+                        <span>
+                            All those crazy laughs
+                        </span>
+
+                    </div>
+
+
+                    <!-- Memory 2 -->
+
+                    <div class="memory">
+
+                        <div class="memory-art">
+                            🥰
+                        </div>
+
+                        <span>
+                            Beautiful moments
+                        </span>
+
+                    </div>
+
+
+                    <!-- Memory 3 -->
+
+                    <div class="memory">
+
+                        <div class="memory-art">
+                            🎉
+                        </div>
+
+                        <span>
+                            The fun times
+                        </span>
+
+                    </div>
+
+
+                    <!-- Memory 4 -->
+
+                    <div class="memory">
+
+                        <div class="memory-art">
+                            🧸
+                        </div>
+
+                        <span>
+                            Our silly conversations
+                        </span>
+
+                    </div>
+
+
+                    <!-- Memory 5 -->
+
+                    <div class="memory">
+
+                        <div class="memory-art">
+                            💗
+                        </div>
+
+                        <span>
+                            Special memories
+                        </span>
+
+                    </div>
+
+
+                    <!-- Memory 6 -->
+
+                    <div class="memory">
+
+                        <div class="memory-art">
+                            ✨
+                        </div>
+
+                        <span>
+                            More memories to come...
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+                <button onclick="nextScene()">
+                    Read My Letter 💌
+                </button>
+
             </div>
 
-            <div class="memory">
-                <div class="memory-art">✨</div>
-                <span>More memories to come...</span>
+        </section>
+
+
+
+        <!-- =========================
+             SCENE 6 - PERSONAL LETTER
+        ========================== -->
+
+        <section class="scene" id="scene6">
+
+            <div class="letter">
+
+                <div class="paper">
+
+                    <h1>
+                        Dear Aarti Singh, 💕
+                    </h1>
+
+
+                    <p>
+                        Happy Birthday to one of the
+                        most wonderful people I know. 🥰
+                    </p>
+
+
+                    <p>
+                        I hope you always remember
+                        how special you are.
+
+                        Thank you for all the laughs,
+                        conversations, silly moments
+                        and beautiful memories we've
+                        shared.
+                    </p>
+
+
+                    <p>
+                        Life changes, people grow,
+                        and time moves forward,
+                        but I hope our friendship
+                        always remains something
+                        worth remembering.
+                    </p>
+
+
+                    <p>
+                        May this new year of your life
+                        bring you success, happiness,
+                        peace and everything your
+                        heart wishes for. ✨
+                    </p>
+
+
+                    <p>
+                        Keep smiling, keep shining
+                        and never stop being yourself.
+                        💗
+                    </p>
+
+
+                    <p class="signature">
+
+                        With lots of love,
+
+                        <br>
+
+                        Your Best Friend ❤️
+
+                    </p>
+
+
+                    <button onclick="nextScene()">
+                        One Last Thing 💕
+                    </button>
+
+                </div>
+
             </div>
 
-        </div>
+        </section>
 
-        <button onclick="nextScene()">Read My Letter 💌</button>
-    </div>
-</section>
+
+
+        <!-- =========================
+             SCENE 7 - FINAL
+        ========================== -->
+
+        <section class="scene" id="scene7">
+
+            <div class="card final-card">
+
+
+                <div class="final-cartoon">
+                    🧸🎂🎈
+                </div>
+
+
+                <h1>
+                    Happy Birthday, Aarti! 🎉💕
+                </h1>
+
+
+                <p>
+
+                    Dear Aarti Singh,
+
+                    <br><br>
+
+                    Thank you for being such an
+                    amazing part of my life.
+
+                    <br><br>
+
+                    Here's to another year of
+                    laughter, adventures and
+                    beautiful memories together.
+                    🥂✨
+
+                    <br><br>
+
+                    I hope every dream you have
+                    comes true and your smile
+                    never fades. ❤️
+
+                </p>
+
+
+                <div class="big-heart">
+                    ❤️
+                </div>
+
+
+                <h2>
+                    Stay happy. Stay awesome. 💗
+                </h2>
+
+
+                <button onclick="restart()">
+                    Play Again 🔄
+                </button>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
